@@ -1330,7 +1330,7 @@ Depending on your host operating system, the device name might differ. For examp
 </ul>
 <p>Your serial console should now start <a href="https://github.com/nihalpasham/rustBoot/blob/main/boards/bootloaders/rpi4/debug.md">receiving boot-logs from the rpi4</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="stm32f411"><a class="header" href="#stm32f411"><code>stm32f411</code></a></h1>
-<p>The <code>stm32f411</code> example uses a <a href="https://www.st.com/en/evaluation-tools/32f411ediscovery.html">STM32F411EDISCOVERY BOARD</a>. It has a four LEDs in which two will used as indication of firmware. </p>
+<p>The <code>stm32f411</code> example uses a <a href="https://www.st.com/en/evaluation-tools/32f411ediscovery.html">STM32F411EDISCOVERY BOARD</a>.The board has four LEDs of which two LEDs are used as indicators for firmware. </p>
 <blockquote>
 <p>Note:</p>
 <ul>
@@ -1384,7 +1384,6 @@ pub const UPDATE_PARTITION_ADDRESS: usize = 0x08040000;
 <li>In order to test this example, you'll have to install a couple of pre-requisites  as it uses probe-run to flash the binary.</li>
 <li>cargo install probe-rs-cli </li>
 <li>cargo install cargo-flash </li>
-<li>Compilation and signing is platform independent to MAC,windows or linux.</li>
 </ul>
 </blockquote>
 <p>Here's the command line output that should be produced.</p>
