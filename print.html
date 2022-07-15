@@ -1393,11 +1393,12 @@ pub const UPDATE_PARTITION_ADDRESS: usize = 0x08040000;
 <ul>
 <li>The corresponding public-key is embedded in the bootloader's source.</li>
 <li>In order to test this example, you'll have to install a couple of pre-requisites  as it uses probe-run to flash the binary.</li>
-<li>cargo install probe-rs-cli </li>
-<li>cargo install cargo-flash </li>
-<li>cargo install cargo-binutils</li>
 </ul>
 </blockquote>
+<pre><code> cargo install probe-rs-cli 
+ cargo install cargo-flash 
+ cargo install cargo-binutils
+</code></pre>
 <p>Here's the command line output that should be produced.</p>
 <pre><code>yashwanthsingh@Yashwanths-MacBook-Pro rustBoot % cargo stm32f411 build-sign-flash rustBoot 1234 1235
     Finished dev [unoptimized + debuginfo] target(s) in 0.07s
