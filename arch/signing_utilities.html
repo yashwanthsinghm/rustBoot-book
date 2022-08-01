@@ -153,7 +153,24 @@
 </ul>
 <p>rustBoot <code>rbsigner</code> utility can produce 2 different types signed images. </p>
 <h3 id="signed-mcu-image"><a class="header" href="#signed-mcu-image">Signed mcu-image:</a></h3>
-<pre><code>[TODO ..]
+<p>To sign mcu-image, rustBoot's <a href="https://github.com/nihalpasham/rustBoot/tree/main/rbsigner">image signing utility</a> takes 3 inputs</p>
+<ul>
+<li>an unsigned mcu-image. </li>
+<li>a raw signing-key or ecdsa private key.</li>
+<li>the ecdsa curve-type - (nistp256 only for now).</li>
+</ul>
+<p>Following ways to sign mcu-image</p>
+<ul>
+<li>First we build the image and then sign it using the following commands.</li>
+</ul>
+<pre><code> cargo [board-name] build pkgs-for
+
+ cargo [board-name] sign pkgs-for 
+</code></pre>
+<ul>
+<li>Single command to build ,sign and flash.</li>
+</ul>
+<pre><code>cargo [board-name] build-sign-flash rustBoot [boot-ver] [updt-ver]
 </code></pre>
 <h3 id="signed-fit-image"><a class="header" href="#signed-fit-image">Signed fit-image:</a></h3>
 <p>To sign a fit-image, rustBoot's <a href="https://github.com/nihalpasham/rustBoot/tree/main/rbsigner">image signing utility</a> takes 3 inputs </p>
